@@ -1,0 +1,37 @@
+*macaroni.txt*  Edit macros with <Leader>q{register letter}
+
+" Author: Brandon Simmons
+" Version: 1.0.0
+
+Default Mapping: ~
+    <Leader>q
+
+    This mapping will prompt you to type the letter of the register that
+    contains your macro ([a-zA-Z]), and, after receiving it, will open the
+    command-line-window and construct an ex command that you can modify in
+    order to edit the contents of that register.
+
+    For example, assuming that your |<Leader>| key is " " and that you just
+    recorded "02f,lgUl" into the "a" register, then typing " qa" will give you
+    the following command to edit: >
+        :let @a="02f,lgUl"
+<
+    Press <Enter> after editing to execute the command to overwrite the macro.
+
+    Note: There is no need to wait to see the prompt for the register letter.
+          Think of the mapping like this: <Leader>q{register letter of macro}
+
+Escaping and Special Characters: ~
+    Any double quote within your macro must be escaped by a backslash: >
+        :let @a="0f\"lgUe"
+<
+    To insert a special character into the macro, such as <Esc> or <Enter>,
+    enter Insert mode, type CTRL-V, and then type the special character.
+
+Custom Mapping: ~
+    To replace the default mapping with, say, "<Leader>0", add this to your
+    config: >
+    nmap <unique> <Leader>0 <Plug>MacaroniGetRegisterLetterThenOpenForEditing;
+<
+
+vim:filetype=help
