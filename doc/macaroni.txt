@@ -1,7 +1,7 @@
 *macaroni.txt*  Edit macros with <Leader>q{register letter}
 
 " Author: Brandon Simmons
-" Version: 1.0.0
+" Version: 1.0.1
 
 Default Mapping: ~
     <Leader>q

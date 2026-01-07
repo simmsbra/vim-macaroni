@@ -1,7 +1,7 @@
 " vim-macaroni: quick, no-nonsense macro editing
 "
 " Author: Brandon Simmons
-" Version: 1.0.0
+" Version: 1.0.1
 
 " :h write-plugin
 
@@ -39,7 +39,7 @@ function! s:GetRegisterLetterThenOpenForEditing()
     call feedkeys(
         \ "q:"
         \ .. "i"
-        \ .. ":let @" .. l:registerLetter .. "="
+        \ .. "let @" .. l:registerLetter .. "="
         \ .. '"'
         \ .. "\<C-r>\<C-o>=escape(@" .. l:registerLetter .. ", '\"')\<CR>"
         \ .. '"'
