@@ -59,14 +59,14 @@ To remove the plugin, delete `vim-macaroni/`.
 Refer to the help file by [reading it here](doc/macaroni.txt) or by running `:help macaroni.txt` after installing.
 
 ## Thanks
-Thank you, wife, for creating the logo and for listening to me talk about vim.
+Thanks to my wonderful wife for creating the logo and for listening to me talk about vim.
 
-Thank you, zdcthomas, for writing [medit](https://github.com/zdcthomas/medit), which served as a reference for how to use just one mapping for all registers.
+Thanks to zdcthomas for writing [medit](https://github.com/zdcthomas/medit), which served as a reference for how to use just one mapping for all registers.
 
-Thank you, people who wrote the vim help pages.
+Thanks to the people who wrote the vim help pages.
 
-Thank you, tpope, for writing plugins that served as good references.
+Thanks to tpope for writing plugins that served as good references.
 
-Thank you, people whose explanations I read online while researching things about vimscript.
+Thanks to the people whose explanations I read online while researching things about vimscript.
 
-And thank you for visiting.
+And thanks to you for visiting.
