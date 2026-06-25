@@ -1,7 +1,7 @@
 " vim-macaroni: quick, no-nonsense macro editing
 "
 " Author: Brandon Simmons
-" Version: 1.0.1
+" Version: 1.0.2
 
 " :h write-plugin
 

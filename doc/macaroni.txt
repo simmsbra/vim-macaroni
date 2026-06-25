@@ -1,7 +1,7 @@
 *macaroni.txt*  Edit macros with <Leader>q{register letter}
 
 " Author: Brandon Simmons
-" Version: 1.0.1
+" Version: 1.0.2
 
 Default Mapping: ~
     <Leader>q
@@ -14,7 +14,7 @@ Default Mapping: ~
     For example, assuming that your |<Leader>| key is " " and that you just
     recorded "02f,lgUl" into the "a" register, then typing " qa" will give you
     the following command to edit: >
-        :let @a="02f,lgUl"
+        let @a="02f,lgUl"
 <
     Press <Enter> after editing to execute the command to overwrite the macro.
 
@@ -23,7 +23,7 @@ Default Mapping: ~
 
 Escaping and Special Characters: ~
     Any double quote within your macro must be escaped by a backslash: >
-        :let @a="0f\"lgUe"
+        let @a="0f\"lgUe"
 <
     To insert a special character into the macro, such as <Esc> or <Enter>,
     enter Insert mode, type CTRL-V, and then type the special character.
