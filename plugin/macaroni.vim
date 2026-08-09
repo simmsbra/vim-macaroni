@@ -1,7 +1,7 @@
 " vim-macaroni: quick, no-nonsense macro editing
 "
 " Author: Brandon Simmons
-" Version: 1.0.2
+" Version: 1.1.0
 
 " :h write-plugin
 
@@ -27,6 +27,10 @@ function! s:GetRegisterLetterThenOpenForEditing()
         return
     endif
     let l:registerLetter = nr2char(l:registerLetter)
+    if l:registerLetter == "\<Esc>"
+        mode " clear the prompt from the command line
+        return
+    endif
     if l:registerLetter !~# '[a-zA-Z]'
         call s:EchoInvalidCharError()
         return
